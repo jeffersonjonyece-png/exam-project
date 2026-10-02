@@ -5,8 +5,8 @@ CREATE TABLE Users (
     email       VARCHAR(25) NOT NULL UNIQUE,
     role        ENUM('Student', 'Faculty') NOT NULL,
    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-   nshe_id   CHAR(10) NOT NULL UNIQUE, 
-   student_id CHAR(10) NOT NULL UNQIUE 
+   nshe_id   CHAR(10) NOT NULL UNIQUE
+   
 );
 
 -- EXAM SESSIONS
