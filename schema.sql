@@ -14,7 +14,8 @@ CREATE TABLE ExamSessions (
     session_id    INT AUTO_INCREMENT PRIMARY KEY,
     exam_name     VARCHAR(150) NOT NULL,
     session_date  DATETIME NOT NULL,
-    capacity      INT NOT NULL DEFAULT 20 CHECK (capacity > 0)
+    capacity      INT NOT NULL DEFAULT 20 CHECK (capacity > 0),
+    is_active TINYINT(1) NOT NULL DEFAULT
 );
 
 -- REGISTRATIONS
