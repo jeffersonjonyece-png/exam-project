@@ -1,11 +1,12 @@
 -- USERS
 CREATE TABLE Users (
     user_id     INT AUTO_INCREMENT PRIMARY KEY,
-    name        VARCHAR(100) NOT NULL,
-    email       VARCHAR(150) NOT NULL UNIQUE,
+    name        VARCHAR(25) NOT NULL,
+    email       VARCHAR(25) NOT NULL UNIQUE,
     role        ENUM('Student', 'Faculty') NOT NULL,
    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-   nshe_id   CHAR(10) NOT NULL UNIQUE 
+   nshe_id   CHAR(10) NOT NULL UNIQUE, 
+   student_id CHAR(10) NOT NULL UNQIUE 
 );
 
 -- EXAM SESSIONS
